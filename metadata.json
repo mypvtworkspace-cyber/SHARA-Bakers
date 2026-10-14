@@ -1,0 +1,8 @@
+{
+  "name": "Sahara Bakers – Restaurant & Ordering Platform",
+  "description": "Sahara Bakers in Bannu, Pakistan. Home of signature clay-pot Matka Pizza, artisanal cakes, fresh bakery delicacies, and traditional sweets. Order online for delivery and pickup.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

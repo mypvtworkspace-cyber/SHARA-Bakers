@@ -1,0 +1,1329 @@
+{
+  "version": 28,
+  "updatedAt": "2026-10-14T05:30:13.154Z",
+  "settings": {
+    "businessName": "Sahara Bakers",
+    "tagline": "Home of Signature Clay-Pot Matka Pizza & Artisanal Bakery",
+    "address": "Railway Road, near Syed Software House",
+    "city": "Bannu",
+    "phone": "+92 330 5868488",
+    "whatsappPhone": "+92 330 5868488",
+    "email": "info@saharabakers.pk",
+    "openingTime": "08:00",
+    "closingTime": "23:30",
+    "isOpen": true,
+    "orderAcceptanceEnabled": true,
+    "standardDeliveryFee": 150,
+    "freeDeliveryThreshold": 2000,
+    "minimumOrderAmount": 300,
+    "announcement": "Fresh Clay-Pot Matka Pizza baked to order!",
+    "supportedPaymentMethods": [
+      "CASH",
+      "EASYPAISA",
+      "CASH_ON_DELIVERY",
+      "CASH_ON_PICKUP"
+    ],
+    "creatorName": "Mr Zaheer",
+    "creatorCredit": "Designed & Developed by Mr Zaheer",
+    "showCreatorCredit": true,
+    "easypaisaAccountTitle": "Rahman Ullah Khan",
+    "easypaisaAccountNumber": "0333-8072589",
+    "logoUrl": "/assets/images/sahara_logo.jpg",
+    "easypaisaQrUrl": "/assets/images/sahara_easypaisa_qr.png",
+    "serviceAreas": [
+      "Railway Road",
+      "City Center",
+      "Cantonment Bannu",
+      "Miran Shah Road",
+      "Kohat Road",
+      "Sugar Mill Colony",
+      "Mandeyan",
+      "Bannu University Campus",
+      "Ghauri Gate"
+    ],
+    "testSaved": true,
+    "postalCode": "28100",
+    "updatedAt": "2026-10-09T07:32:47.063Z",
+    "projectMetadata": {
+      "creatorName": "Muhammad Zaheer",
+      "creatorCredit": "Designed & Developed by Muhammad Zaheer",
+      "updatedAt": "2026-10-06T00:00:00.000Z",
+      "businessName": "Sahara Bakers"
+    }
+  },
+  "matkaConfig": {
+    "sizes": [
+      {
+        "basePrice": 350,
+        "defaultPersons": 1,
+        "id": "size-small",
+        "name": "Small",
+        "servesText": "Best for 1-2 Persons",
+        "recommendedPersons": [
+          1,
+          2
+        ]
+      },
+      {
+        "recommendedPersons": [
+          2,
+          3,
+          4
+        ],
+        "basePrice": 650,
+        "servesText": "Best for 2-4 Persons",
+        "name": "Medium",
+        "id": "size-medium",
+        "defaultPersons": 3
+      },
+      {
+        "basePrice": 1150,
+        "recommendedPersons": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "id": "size-large",
+        "name": "Large",
+        "defaultPersons": 5,
+        "servesText": "Best for 4-7 Persons"
+      }
+    ],
+    "flavors": [
+      {
+        "available": true,
+        "id": "flavor-tikka",
+        "priceAdjustment": 0,
+        "name": "Signature Chicken Tikka",
+        "isSpicy": true,
+        "description": "Charcoal-infused spicy smoked chicken chunks with bell peppers and roasted onion slices."
+      },
+      {
+        "id": "flavor-malai",
+        "name": "Creamy Malai Boti",
+        "description": "Tender marinated chicken breast cubes in rich velvety cream, cardamom, and subtle green chili.",
+        "available": true,
+        "priceAdjustment": 50,
+        "isSpicy": false
+      },
+      {
+        "id": "flavor-mughlai",
+        "priceAdjustment": 100,
+        "available": true,
+        "name": "Royal Mughlai Feast",
+        "isSpicy": false,
+        "description": "Slow-simmered minced meat, roasted almonds, golden fried onions, and fragrant herbs."
+      },
+      {
+        "isSpicy": false,
+        "name": "Four-Cheese Clay Melt",
+        "available": true,
+        "description": "Generous layers of premium Mozzarella, Cheddar, fresh Paneer cubes, and Gouda.",
+        "id": "flavor-cheese",
+        "priceAdjustment": 80
+      }
+    ],
+    "estimatedPrepTimeMinutes": 30,
+    "servingConfig": {
+      "pricePerPersonAdjustment": 0,
+      "step": 1,
+      "labelTemplate": "{count} Persons",
+      "minPersons": 1,
+      "maxPersons": 7,
+      "allowedValues": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "enabled": true
+    },
+    "clayPotReturnCredit": 50,
+    "crustOptions": [
+      {
+        "id": "crust-clay",
+        "available": true,
+        "description": "Earthen pot charred dough crust that stays piping hot and crisp.",
+        "priceAdjustment": 0,
+        "name": "Traditional Clay Pot Baking"
+      },
+      {
+        "id": "crust-cheese-burst",
+        "priceAdjustment": 120,
+        "available": true,
+        "name": "Stuffed Mozzarella Rim",
+        "description": "Molten cheese stuffed around the interior pot circumference."
+      }
+    ],
+    "addons": [
+      {
+        "category": "cheese",
+        "name": "Extra Mozzarella Melt",
+        "available": true,
+        "id": "addon-extra-cheese",
+        "price": 120
+      },
+      {
+        "price": 60,
+        "available": true,
+        "name": "Pickled Jalapeños",
+        "category": "topping",
+        "id": "addon-jalapeno"
+      },
+      {
+        "name": "Sautéed Garlic Mushrooms",
+        "available": true,
+        "category": "topping",
+        "price": 90,
+        "id": "addon-mushrooms"
+      },
+      {
+        "name": "House Special Garlic Dip",
+        "category": "sauce",
+        "id": "addon-garlic-mayo",
+        "price": 50,
+        "available": true
+      }
+    ]
+  },
+  "products": [
+    {
+      "name": "Sahara Special Sesame Milk Bread",
+      "isFeatured": false,
+      "available": true,
+      "description": "Soft, pillowy fresh daily milk loaf topped with toasted golden sesame seeds.",
+      "id": "prod-bakery-bread",
+      "prepTimeMinutes": 5,
+      "category": "bakery",
+      "unit": "1 Loaf",
+      "productType": "BAKERY",
+      "basePrice": 160,
+      "image": "assets/images/sahara_sesame_milk_bread.jpg"
+    },
+    {
+      "category": "bakery",
+      "productType": "BAKERY",
+      "name": "Traditional Cream Horn Roll",
+      "id": "prod-bakery-cream-roll",
+      "basePrice": 85,
+      "isFeatured": false,
+      "unit": "1 Piece",
+      "available": true,
+      "prepTimeMinutes": 5,
+      "image": "assets/images/sahara_cream_horn_roll.jpg",
+      "description": "Crisp spiral pastry horn loaded with light sweet vanilla whipped cream."
+    },
+    {
+      "prepTimeMinutes": 5,
+      "available": true,
+      "isFeatured": false,
+      "description": "Freshly baked flaky Parisian butter croissant with honeycomb interior.",
+      "unit": "1 Piece",
+      "category": "bakery",
+      "productType": "BAKERY",
+      "image": "assets/images/sahara_butter_croissant.jpg",
+      "basePrice": 140,
+      "id": "prod-bakery-croissant",
+      "name": "Artisan Butter Croissant"
+    },
+    {
+      "available": true,
+      "name": "Crispy Chicken Puff Patty",
+      "prepTimeMinutes": 5,
+      "image": "assets/images/sahara_chicken_puff_patty.jpg",
+      "productType": "BAKERY",
+      "description": "Flaky golden puff pastry filled with freshly spiced shredded chicken breast.",
+      "id": "prod-bakery-patty",
+      "isFeatured": true,
+      "unit": "1 Piece",
+      "category": "bakery",
+      "basePrice": 650
+    },
+    {
+      "id": "prod-cake-fudge",
+      "category": "cakes",
+      "unit": "1 Kg",
+      "available": true,
+      "productType": "CAKE",
+      "isFeatured": true,
+      "description": "Deep cocoa sponge layered with rich Belgian dark chocolate ganache and fudge frosting.",
+      "image": "assets/images/sahara_belgian_fudge_cake.jpg",
+      "prepTimeMinutes": 20,
+      "basePrice": 1600,
+      "name": "Belgian Chocolate Fudge Cake"
+    },
+    {
+      "available": true,
+      "productType": "CAKE",
+      "name": "Lotus Biscoff Crunch Cake",
+      "description": "Spiced caramel biscuit sponge topped with speculoos cream and toasted Biscoff drizzle.",
+      "id": "prod-cake-lotus",
+      "category": "cakes",
+      "prepTimeMinutes": 20,
+      "basePrice": 1850,
+      "isFeatured": false,
+      "image": "assets/images/sahara_lotus_biscoff_cake.jpg",
+      "unit": "1 Kg"
+    },
+    {
+      "unit": "1 Kg",
+      "prepTimeMinutes": 20,
+      "available": true,
+      "productType": "CAKE",
+      "id": "prod-cake-red-velvet",
+      "name": "Red Velvet Cream Cheese Cake",
+      "basePrice": 1750,
+      "image": "assets/images/sahara_red_velvet_cake.jpg",
+      "description": "Velvety crimson sponge layered with silky smooth Philadelphia cream cheese frosting.",
+      "category": "cakes",
+      "isFeatured": true
+    },
+    {
+      "id": "prod-cake-slice",
+      "unit": "1 Slice",
+      "category": "cakes",
+      "available": true,
+      "isFeatured": false,
+      "productType": "CAKE",
+      "description": "Individual portion of rich layered chocolate ganache pastry for instant indulgence.",
+      "image": "assets/images/sahara_chocolate_pastry_slice.jpg",
+      "prepTimeMinutes": 5,
+      "basePrice": 220,
+      "name": "Dark Chocolate Pastry Slice"
+    },
+    {
+      "unit": "1 Kg",
+      "isFeatured": true,
+      "description": "A soft, moist cake soaked in a rich three-milk mixture and finished with a creamy topping.",
+      "category": "cakes",
+      "basePrice": 1750,
+      "id": "prod-cake-three-milk",
+      "available": true,
+      "productType": "CAKE",
+      "prepTimeMinutes": 20,
+      "image": "assets/images/sahara_three_milk_cake.jpg",
+      "name": "Three Milk Cake"
+    },
+    {
+      "unit": "1 Clay Cup",
+      "description": "Rich creamy yogurt churned with sugar and topped with thick malai cream.",
+      "image": "assets/images/sahara_bannu_sweet_lassi.jpg",
+      "id": "prod-drink-lassi",
+      "available": true,
+      "name": "Traditional Bannu Sweet Lassi",
+      "basePrice": 180,
+      "category": "beverages",
+      "isFeatured": false,
+      "prepTimeMinutes": 5,
+      "productType": "DRINK"
+    },
+    {
+      "unit": "1 Glass",
+      "prepTimeMinutes": 5,
+      "productType": "DRINK",
+      "available": true,
+      "id": "prod-drink-margarita",
+      "name": "Fresh Mint Lemon Margarita",
+      "basePrice": 220,
+      "image": "assets/images/sahara_mint_margarita.jpg",
+      "description": "Crushed garden mint, freshly squeezed lemon juice, black salt, and sparkling soda.",
+      "category": "beverages",
+      "isFeatured": false
+    },
+    {
+      "isSignature": true,
+      "unit": "1 Clay Pot",
+      "prepTimeMinutes": 30,
+      "productType": "MATKA_PIZZA",
+      "available": true,
+      "id": "prod-matka-pizza",
+      "name": "Sahara Signature Clay-Pot Matka Pizza",
+      "basePrice": 350,
+      "image": "assets/images/sahara_matka_pizza_dish.jpg",
+      "description": "Slow-baked in genuine earthenware pots for an earthy smoky aroma, golden crunchy crust, and bubbling molten mozzarella.",
+      "category": "matka-pizza",
+      "isFeatured": true
+    },
+    {
+      "basePrice": 1350,
+      "unit": "1 Kg",
+      "productType": "SWEETS",
+      "prepTimeMinutes": 10,
+      "id": "prod-sweets-barfi",
+      "description": "Dense pure buffalo milk khoya fudge infused with crushed green pistachios and almonds.",
+      "name": "Pistachio Almond Khoya Barfi",
+      "image": "assets/images/sahara_pistachio_barfi.jpg",
+      "category": "sweets",
+      "available": true,
+      "isFeatured": true
+    },
+    {
+      "category": "sweets",
+      "name": "Sahara Heritage Mixed Mithai Gift Box",
+      "description": "Assortment of handcrafted Cham Cham, Motichoor Laddu, Pera, and Kalakand.",
+      "available": true,
+      "basePrice": 1300,
+      "prepTimeMinutes": 10,
+      "unit": "1 Kg Box",
+      "productType": "SWEETS",
+      "id": "prod-sweets-box",
+      "isFeatured": false,
+      "image": "assets/images/sahara_mixed_mithai_box.jpg"
+    },
+    {
+      "productType": "SWEETS",
+      "unit": "1 Kg",
+      "isFeatured": true,
+      "available": true,
+      "prepTimeMinutes": 10,
+      "category": "sweets",
+      "basePrice": 1100,
+      "name": "Royal Hot Gulab Jamun",
+      "image": "assets/images/sahara_hot_gulab_jamun.jpg",
+      "id": "prod-sweets-gulab",
+      "description": "Khoya dumplings soaked in fragrant cardamom and saffron rosewater syrup."
+    }
+  ],
+  "orders": [
+    {
+      "subtotal": 1000,
+      "firestoreSyncedAt": "2026-10-14T05:07:06.737Z",
+      "discount": 0,
+      "version": 2,
+      "customerName": "Bannu Customer",
+      "deliveryStatus": "ASSIGNED",
+      "riderId": "shahnawaz@rider",
+      "customerId": "cust_1",
+      "deliveryFee": 80,
+      "timeline": [
+        {
+          "timestamp": "2026-10-14T05:07:06.736Z",
+          "status": "READY",
+          "note": "Assigned to delivery captain: Shah Nawaz (+923350507308)"
+        }
+      ],
+      "updatedBy": "shahnawaz@rider",
+      "orderNumber": "SB-TEST-99",
+      "id": "test_order_1791954424686",
+      "totalAmount": 1080,
+      "riderName": "Shah Nawaz (+923350507308)",
+      "status": "READY",
+      "paymentMethod": "CASH",
+      "createdAt": "2026-10-14T05:07:04.686Z",
+      "guestOrder": false,
+      "paymentStatus": "PAYMENT_PENDING",
+      "fulfilmentType": "DELIVERY",
+      "deliveryAddress": {
+        "area": "City Center",
+        "street": "Railway Road",
+        "city": "Bannu"
+      },
+      "updatedAt": "2026-10-14T05:07:06.736Z",
+      "items": [],
+      "orderDateTime": "Now",
+      "customerPhone": "+923301112233"
+    },
+    {
+      "firestoreSyncedAt": "2026-10-13T04:24:10.780Z",
+      "updatedAt": "2026-10-13T04:24:14.872Z",
+      "timeline": [
+        {
+          "status": "ORDER_PLACED",
+          "note": "Initial order placement test",
+          "timestamp": "2026-10-13T04:24:10.780Z"
+        }
+      ],
+      "updatedBy": "counter@sahara",
+      "customerName": "Test Customer Bannu",
+      "paymentMethod": "CASH",
+      "paymentStatus": "PAYMENT_CONFIRMED",
+      "id": "SB-TEST-PERSIST-1791865450734",
+      "items": [
+        {
+          "quantity": 1,
+          "totalPrice": 650,
+          "category": "matka-pizza",
+          "productId": "prod-matka-pizza",
+          "unitPrice": 650,
+          "productName": "Signature Clay-Pot Matka Pizza",
+          "id": "item_1"
+        }
+      ],
+      "subtotal": 650,
+      "fulfilmentType": "DELIVERY",
+      "deliveryAddress": {
+        "area": "Railway Road",
+        "street": "Railway Road",
+        "city": "Bannu"
+      },
+      "orderDateTime": "Today, 4:24:10 AM",
+      "totalAmount": 800,
+      "guestOrder": true,
+      "customerPhone": "+92 330 5868488",
+      "createdAt": "2026-10-13T04:24:10.734Z",
+      "orderNumber": "SB-TEST-777",
+      "discount": 0,
+      "deliveryFee": 150,
+      "status": "PREPARING",
+      "customerId": "cust_test_123"
+    },
+    {
+      "customerId": "guest_1791532256334_h1kb",
+      "status": "ORDER_PLACED",
+      "discount": 0,
+      "version": 1,
+      "guestOrder": true,
+      "updatedAt": "2026-10-09T07:50:56.488Z",
+      "id": "ord_1791532256342_hedjc",
+      "paymentMethod": "EASYPAISA",
+      "fulfilmentType": "DELIVERY",
+      "customerName": "AFFIDAVITT",
+      "subtotal": 1440,
+      "paymentStatus": "PAYMENT_PENDING",
+      "customerEmail": "mypvtworkspace@gmail.com",
+      "orderDateTime": "09-Oct-2026, 12:50 am",
+      "deliveryFee": 80,
+      "deliveryAddress": {
+        "street": "Bannu CIty",
+        "city": "Bannu",
+        "area": "City Center"
+      },
+      "firestoreSyncedAt": "2026-10-09T07:50:59.000Z",
+      "createdAt": "2026-10-09T07:50:56.335Z",
+      "orderNumber": "SB-1001",
+      "customerPhone": "+923285760000",
+      "timeline": [
+        {
+          "status": "ORDER_PLACED",
+          "timestamp": "2026-10-09T07:50:56.335Z",
+          "noteUrdu": "آرڈر موصول ہو گیا ہے",
+          "note": "Order successfully received by Sahara Bakers kitchen."
+        }
+      ],
+      "idempotencyKey": "idemp_1791532026080_dbn6h",
+      "totalAmount": 1520,
+      "items": [
+        {
+          "selectedAddonsSnapshot": [
+            {
+              "name": "Extra Mozzarella Melt",
+              "price": 120
+            },
+            {
+              "name": "House Special Garlic Dip",
+              "price": 50
+            }
+          ],
+          "itemTotal": 1440,
+          "selectedOptionsSnapshot": [],
+          "quantity": 1,
+          "productId": "prod-matka-pizza",
+          "unitPrice": 1440,
+          "productType": "MATKA_PIZZA",
+          "productName": "Matka Pizza (Large)",
+          "category": "matka-pizza",
+          "customerNote": "Ghee Thora Kaam Istamal Karna",
+          "size": "Large",
+          "customizationSummary": "Size: Large • For 6 Persons • Flavor: Signature Chicken Tikka • Crust: Stuffed Mozzarella Rim • Add-ons: Extra Mozzarella Melt, House Special Garlic Dip",
+          "itemSubtotal": 1440,
+          "customization": {
+            "persons": 6,
+            "selectedAddons": [
+              {
+                "id": "addon-extra-cheese",
+                "price": 120,
+                "name": "Extra Mozzarella Melt"
+              },
+              {
+                "name": "House Special Garlic Dip",
+                "price": 50,
+                "id": "addon-garlic-mayo"
+              }
+            ],
+            "crust": "Stuffed Mozzarella Rim",
+            "size": "Large",
+            "flavor": "Signature Chicken Tikka",
+            "customerNote": "Ghee Thora Kaam Istamal Karna"
+          },
+          "numberOfPersons": 6
+        }
+      ]
+    },
+    {
+      "customerEmail": "shahid@bannu.pk",
+      "customerName": "Shahid Khan",
+      "paymentStatus": "PAYMENT_PENDING",
+      "customerPhone": "+92 333 5551234",
+      "version": 1,
+      "id": "SB-AUDIT-1791531166765",
+      "subtotal": 550,
+      "firestoreSyncedAt": "2026-10-09T07:32:46.769Z",
+      "createdAt": "2026-10-09T07:32:46.765Z",
+      "deliveryAddress": {
+        "street": "Railway Road Shop 4",
+        "city": "Bannu",
+        "area": "Railway Road"
+      },
+      "deliveryFee": 150,
+      "updatedAt": "2026-10-09T07:32:46.769Z",
+      "orderNumber": "SB-AUDIT-1791531166765",
+      "items": [
+        {
+          "productId": "prod-matka-pizza",
+          "itemTotal": 550,
+          "quantity": 1,
+          "unitPrice": 550,
+          "productName": "Signature Matka Pizza"
+        }
+      ],
+      "status": "ORDER_PLACED",
+      "paymentMethod": "EASYPAISA",
+      "fulfilmentType": "DELIVERY",
+      "totalAmount": 700
+    },
+    {
+      "firestoreSyncedAt": "2026-10-09T07:31:42.284Z",
+      "deliveryFee": 150,
+      "paymentMethod": "EASYPAISA",
+      "subtotal": 550,
+      "customerName": "Muhammad Ali Bannu",
+      "orderNumber": "SB-ORD-1791531042724",
+      "updatedBy": "sahara@bannu",
+      "deliveryAddress": {
+        "area": "Railway Road",
+        "street": "Railway Road, near Station Market",
+        "city": "Bannu"
+      },
+      "updatedAt": "2026-10-09T07:31:42.283Z",
+      "status": "CANCELLED",
+      "version": 4,
+      "totalAmount": 700,
+      "fulfilmentType": "DELIVERY",
+      "id": "SB-ORD-1791531042724",
+      "createdAt": "2026-10-09T07:30:42.724Z",
+      "timeline": [
+        {
+          "note": "Order placed by customer",
+          "status": "ORDER_PLACED",
+          "timestamp": "2026-10-09T07:30:42.724Z"
+        },
+        {
+          "timestamp": "2026-10-09T07:31:05.108Z",
+          "note": "Cancelled by customer request",
+          "status": "CANCELLED"
+        },
+        {
+          "timestamp": "2026-10-09T07:31:30.443Z",
+          "note": "Cancelled by customer request",
+          "status": "CANCELLED"
+        },
+        {
+          "note": "Verified Easypaisa transaction",
+          "status": "CANCELLED",
+          "timestamp": "2026-10-09T07:31:42.283Z"
+        }
+      ],
+      "paymentStatus": "PAYMENT_CONFIRMED",
+      "customerEmail": "mali@bannu.pk",
+      "items": [
+        {
+          "matkaSize": "Medium",
+          "numberOfPersons": 2,
+          "unitPrice": 550,
+          "itemTotal": 550,
+          "productId": "prod-matka-pizza",
+          "productName": "Sahara Signature Clay-Pot Matka Pizza",
+          "quantity": 1
+        }
+      ],
+      "customerPhone": "+92 333 1234567",
+      "orderType": "DELIVERY"
+    },
+    {
+      "test": true,
+      "createdAt": "2026-10-09T07:23:01.210Z",
+      "orderNumber": "SB-TEST-001"
+    },
+    {
+      "discount": 0,
+      "customerName": "Test Customer",
+      "firestoreSyncedAt": "2026-10-09T07:27:10.091Z",
+      "totalAmount": 1750,
+      "subtotal": 1750,
+      "orderNumber": "SB-TEST-999",
+      "orderDateTime": "10/9/2026, 7:12:45 AM",
+      "paymentStatus": "PAYMENT_PENDING",
+      "customerEmail": "test@saharabakers.pk",
+      "createdAt": "2026-10-09T07:12:45.871Z",
+      "id": "ord_test_1791529965871",
+      "customerPhone": "0333-8072589",
+      "deliveryFee": 0,
+      "items": [
+        {
+          "itemTotal": 1750,
+          "productId": "prod-cake-three-milk",
+          "quantity": 1,
+          "unitPrice": 1750,
+          "category": "cakes",
+          "productName": "Three Milk Cake"
+        }
+      ],
+      "paymentMethod": "EASYPAISA",
+      "updatedAt": "2026-10-09T07:12:45.895Z",
+      "customerId": "usr_owner_1791365737357_ni9m",
+      "status": "ORDER_PLACED",
+      "timeline": [
+        {
+          "timestamp": "2026-10-09T07:12:45.890Z",
+          "status": "ORDER_PLACED"
+        }
+      ],
+      "version": 1
+    },
+    {
+      "createdAt": "2026-10-07T10:08:01.552Z",
+      "orderDateTime": "07-Oct-2026, 3:08 am",
+      "paymentStatus": "PAYMENT_PENDING",
+      "fulfilmentType": "PICKUP",
+      "customerPhone": "+92 330 5868488",
+      "paymentMethod": "EASYPAISA",
+      "guestOrder": false,
+      "firestoreSyncedAt": "2026-10-09T07:27:10.365Z",
+      "updatedAt": "2026-10-07T10:08:01.896Z",
+      "status": "ORDER_PLACED",
+      "customerName": "Sahara Admin & Owner",
+      "idempotencyKey": "idemp_1791367575841_h6do7",
+      "id": "ord_1791367681553_x2tqd",
+      "discount": 0,
+      "items": [
+        {
+          "itemTotal": 770,
+          "size": "Medium",
+          "category": "matka-pizza",
+          "selectedOptionsSnapshot": [],
+          "unitPrice": 770,
+          "itemSubtotal": 770,
+          "productId": "prod-matka-pizza",
+          "customizationSummary": "Size: Medium • For 3 Persons • Flavor: Signature Chicken Tikka • Crust: Stuffed Mozzarella Rim",
+          "selectedAddonsSnapshot": [],
+          "customization": {
+            "persons": 3,
+            "flavor": "Signature Chicken Tikka",
+            "selectedAddons": [],
+            "crust": "Stuffed Mozzarella Rim",
+            "size": "Medium"
+          },
+          "numberOfPersons": 3,
+          "productType": "MATKA_PIZZA",
+          "productName": "Matka Pizza (Medium)",
+          "quantity": 1
+        }
+      ],
+      "subtotal": 770,
+      "pickupTimeEstimate": "25 - 35 minutes",
+      "customerEmail": "sahara@bannu",
+      "version": 1,
+      "totalAmount": 770,
+      "deliveryAddress": {
+        "street": "Counter Pickup (Sahara Bakers, Railway Road)",
+        "area": "Railway Road",
+        "city": "Bannu"
+      },
+      "orderNumber": "SB-1004",
+      "customerId": "usr_owner_1791278468683_sm7z",
+      "timeline": [
+        {
+          "status": "ORDER_PLACED",
+          "noteUrdu": "آرڈر موصول ہو گیا ہے",
+          "note": "Order successfully received by Sahara Bakers kitchen.",
+          "timestamp": "2026-10-07T10:08:01.552Z"
+        }
+      ],
+      "deliveryFee": 0
+    },
+    {
+      "totalAmount": 730,
+      "subtotal": 650,
+      "createdAt": "2026-10-07T09:56:21.960Z",
+      "deliveryAddress": {
+        "street": "Kotka Zabta Khan Near Kurum Pull F.C Line Bannu\nKotka Zabta Khan Near Kurum Pull F.C Line Bannu",
+        "city": "Bannu",
+        "area": "Railway Road"
+      },
+      "fulfilmentType": "DELIVERY",
+      "discount": 0,
+      "deliveryFee": 80,
+      "version": 2,
+      "orderNumber": "SB-1003",
+      "customerEmail": "sahara@bannu",
+      "idempotencyKey": "idemp_1791366753498_9rw2z",
+      "guestOrder": false,
+      "timeline": [
+        {
+          "status": "ORDER_PLACED",
+          "timestamp": "2026-10-07T09:56:21.960Z",
+          "noteUrdu": "آرڈر موصول ہو گیا ہے",
+          "note": "Order successfully received by Sahara Bakers kitchen."
+        },
+        {
+          "note": "Status updated to ACCEPTED by OWNER",
+          "status": "ACCEPTED",
+          "timestamp": "2026-10-07T09:57:03.125Z"
+        }
+      ],
+      "id": "ord_1791366981964_sn236",
+      "updatedAt": "2026-10-07T09:57:03.125Z",
+      "status": "ACCEPTED",
+      "customerName": "fr",
+      "customerPhone": "+92 330 58684t88",
+      "orderDateTime": "07-Oct-2026, 2:56 am",
+      "paymentStatus": "PAYMENT_PENDING",
+      "paymentMethod": "EASYPAISA",
+      "updatedBy": "sahara@bannu",
+      "items": [
+        {
+          "productId": "prod-matka-pizza",
+          "unitPrice": 650,
+          "customization": {
+            "crust": "Traditional Clay Pot Baking",
+            "persons": 3,
+            "selectedAddons": [],
+            "flavor": "Signature Chicken Tikka",
+            "size": "Medium"
+          },
+          "selectedOptionsSnapshot": [],
+          "productType": "MATKA_PIZZA",
+          "category": "matka-pizza",
+          "productName": "Matka Pizza (Medium)",
+          "itemTotal": 650,
+          "numberOfPersons": 3,
+          "size": "Medium",
+          "itemSubtotal": 650,
+          "quantity": 1,
+          "customizationSummary": "Size: Medium • For 3 Persons • Flavor: Signature Chicken Tikka • Crust: Traditional Clay Pot Baking",
+          "selectedAddonsSnapshot": []
+        }
+      ],
+      "firestoreSyncedAt": "2026-10-09T07:27:10.647Z",
+      "customerId": "usr_owner_1791278468683_sm7z"
+    }
+  ],
+  "users": [
+    {
+      "id": "usr_owner_1791365737357_ni9m",
+      "name": "Sahara Admin & Owner",
+      "email": "sahara@bannu",
+      "phone": "+92 330 5868488",
+      "role": "OWNER",
+      "passwordHash": "bcdcd0cc51042a11f1fcbc854312ced7b0c11193d1e910d0c1c02a75777d387f",
+      "passwordSalt": "8ec43def13eb91ac5081aac1f088d24d",
+      "createdAt": "2026-10-07T09:35:37.357Z"
+    },
+    {
+      "id": "usr_manager_1791365737364_w1bi",
+      "name": "Tariq Khan (Manager)",
+      "email": "manager@sahara.pk",
+      "phone": "+92 330 5868489",
+      "role": "MANAGER",
+      "passwordHash": "3b65669a69b56432ac99bac6314ac2e62be4b62730278370c4e17671a0a0b3bc",
+      "passwordSalt": "ce3cfec0da444088bcaaa56458c6f1dd",
+      "createdAt": "2026-10-07T09:35:37.364Z"
+    },
+    {
+      "id": "usr_waiter_1791365737366_y6b6",
+      "name": "Bilal Ahmed (Floor Waiter)",
+      "email": "waiter@sahara.pk",
+      "phone": "+92 330 5868490",
+      "role": "WAITER",
+      "passwordHash": "ddfdbc1982711a65b57930baa6a6f7f1ed46362e8fbc2814c049c1bacbda5c0a",
+      "passwordSalt": "e6cbcf0fe60899eab3f9dfdcfd099bad",
+      "createdAt": "2026-10-07T09:35:37.366Z"
+    },
+    {
+      "id": "usr_kitchen_staff_1791365737366_2k5l",
+      "name": "Ustad Farhan (Head Baker)",
+      "email": "kitchen@sahara.pk",
+      "phone": "+92 330 5868491",
+      "role": "KITCHEN_STAFF",
+      "passwordHash": "c35e7ab0b2d453e302d2b4f30827e92954492eef127d693101af700b827cfca5",
+      "passwordSalt": "f452aa9af97a56e459b068dfe6edf2e0",
+      "createdAt": "2026-10-07T09:35:37.366Z"
+    },
+    {
+      "id": "usr_rider_1791365737367_r0qg",
+      "name": "Zubair Ali (Delivery Captain)",
+      "email": "rider@sahara.pk",
+      "phone": "+92 330 5868492",
+      "role": "RIDER",
+      "passwordHash": "c7e57cc5a8b216d90fad6b39d9e83cd610a778e1eec144ac8c8279bef532141d",
+      "passwordSalt": "3deebc9f42582f270374991d26043e51",
+      "createdAt": "2026-10-07T09:35:37.367Z"
+    },
+    {
+      "id": "usr_rider_1791530947550_ivz3",
+      "name": "Zubair Ali (Delivery Captain)",
+      "email": "rider@sahara",
+      "phone": "+92 330 5868492",
+      "role": "RIDER",
+      "passwordHash": "2015f2fc96b3b5cb99d374ea229866c5a909b470c70f960f451257151631a397",
+      "passwordSalt": "dbac0a0c337376abcd14f1e8ccc3a5e3",
+      "createdAt": "2026-10-09T07:29:07.550Z",
+      "username": "rider@sahara",
+      "riderAccountStatus": "ACTIVE"
+    },
+    {
+      "id": "usr_kitchen_staff_1791530947561_84q9",
+      "name": "Ustad Farhan (Kitchen Cooker)",
+      "email": "cooker@sahara",
+      "phone": "+92 330 5868491",
+      "role": "KITCHEN_STAFF",
+      "passwordHash": "4d1eb188d58e4066fefc3ad1b5f9968c8cda96a8911d46187357368d20d41092",
+      "passwordSalt": "6dd2652b0d4031bc10a10d3dbebba478",
+      "createdAt": "2026-10-09T07:29:07.561Z"
+    },
+    {
+      "id": "usr_manager_1791530947562_i8x7",
+      "name": "Tariq Khan (Manager)",
+      "email": "manager@sahara",
+      "phone": "+92 330 5868489",
+      "role": "MANAGER",
+      "passwordHash": "c76edfece5398ffc7ddfa97749c4ee45c91ebbe287d22cbb80a2acbdcaed8763",
+      "passwordSalt": "edb0aeb5558c3fed1e84d84fd2f501b9",
+      "createdAt": "2026-10-09T07:29:07.562Z"
+    },
+    {
+      "id": "usr_waiter_1791530947563_tru0",
+      "name": "Bilal Ahmed (Floor Waiter)",
+      "email": "waiter@sahara",
+      "phone": "+92 330 5868490",
+      "role": "WAITER",
+      "passwordHash": "20b92cf92383ccdc64f3a037352ceef6897adb63aa33618f45a8f6dab27345da",
+      "passwordSalt": "6f8f1a2123a9499222d7ec466cd48795",
+      "createdAt": "2026-10-09T07:29:07.563Z"
+    },
+    {
+      "id": "usr_counter_1791530947563_838l",
+      "name": "Rashid Khan (Counter Cashier)",
+      "email": "counter@sahara",
+      "phone": "+92 330 5868493",
+      "role": "COUNTER",
+      "passwordHash": "a128ee9e74c031178689b55b65c737807364262fb35aee243560a1d6bd93565d",
+      "passwordSalt": "f56c11affd1d45a857ede30c6ab9665e",
+      "createdAt": "2026-10-09T07:29:07.563Z"
+    },
+    {
+      "id": "usr_rider_shahnawaz",
+      "name": "Shah Nawaz",
+      "email": "shahnawaz@rider",
+      "username": "shahnawaz@rider",
+      "phone": "+923350507308",
+      "role": "RIDER",
+      "passwordHash": "db6e19145925d8990c26fbf96cb3993e2cb7fa4f976a92816208c616a9480408",
+      "passwordSalt": "1e1795e2aec8ac2994b2e34f06975566",
+      "createdAt": "2026-10-14T05:05:26.090Z",
+      "mustChangePassword": true,
+      "riderAccountStatus": "ACTIVE"
+    },
+    {
+      "id": "usr_rider_haroon",
+      "name": "Haroon Niazi",
+      "email": "haroon@rider",
+      "username": "haroon@rider",
+      "phone": "+923322533155",
+      "role": "RIDER",
+      "passwordHash": "0058004006c9f234011ae298e208abfcb81998ad707e1aa90157a9b6ff663870",
+      "passwordSalt": "3262d34ceeb8e02aa47409e9340c7fd8",
+      "createdAt": "2026-10-14T05:05:26.301Z",
+      "mustChangePassword": true,
+      "riderAccountStatus": "PENDING_VERIFICATION"
+    },
+    {
+      "id": "usr_rider_rohin",
+      "name": "Rohin Riyaz",
+      "email": "rohin@rider",
+      "username": "rohin@rider",
+      "phone": "+923348944901",
+      "role": "RIDER",
+      "passwordHash": "847f526a2f0ecc7cda87b0019e819b8b6ba9132c0efb618fc77e33338e13edb1",
+      "passwordSalt": "66e89b439b93598c26b1974cd3075ead",
+      "createdAt": "2026-10-14T05:05:26.339Z",
+      "mustChangePassword": true,
+      "riderAccountStatus": "PENDING_VERIFICATION"
+    },
+    {
+      "id": "usr_rider_zubair",
+      "name": "Zubair",
+      "email": "zubair@rider",
+      "username": "zubair@rider",
+      "phone": "+92 330 5868492",
+      "role": "RIDER",
+      "passwordHash": "3371c2835441d45690bcc7293db07a275eb637877385c92ef69c048f8925e751",
+      "passwordSalt": "3af580586dfb89b6cf63a81ebcfc5b6a",
+      "createdAt": "2026-10-14T05:09:40.516Z",
+      "mustChangePassword": false,
+      "riderAccountStatus": "ACTIVE"
+    }
+  ],
+  "coupons": [
+    {
+      "code": "SAHARA10",
+      "discountType": "PERCENTAGE",
+      "discountValue": 10,
+      "minOrderAmount": 800,
+      "validUntil": "2026-12-31",
+      "isActive": true,
+      "timesUsed": 0
+    },
+    {
+      "code": "MATKAPOT",
+      "discountType": "FIXED",
+      "discountValue": 50,
+      "minOrderAmount": 350,
+      "validUntil": "2026-12-31",
+      "isActive": true,
+      "timesUsed": 0
+    }
+  ],
+  "auditLogs": [
+    {
+      "actorEmail": "waiter@sahara",
+      "actorRole": "WAITER",
+      "action": "USER_LOGIN",
+      "targetResource": "AUTH_SESSION",
+      "newValue": "Logged in with role WAITER (waiter@sahara)",
+      "id": "audit_1791955813154_9ota",
+      "timestamp": "2026-10-14T05:30:13.154Z"
+    },
+    {
+      "id": "audit_1791954426736_f25b",
+      "actorEmail": "shahnawaz@rider",
+      "actorRole": "RIDER",
+      "action": "STAFF_ASSIGNED",
+      "targetResource": "ORDER_SB-TEST-99",
+      "newValue": "Rider: Shah Nawaz (+923350507308)",
+      "timestamp": "2026-10-14T05:07:06.736Z"
+    },
+    {
+      "id": "audit_1791954426734_rgq6",
+      "actorEmail": "customer@order",
+      "actorRole": "CUSTOMER",
+      "action": "ORDER_CREATED",
+      "targetResource": "ORDER_SB-TEST-99",
+      "newValue": "Rs. 1080 (DELIVERY)",
+      "timestamp": "2026-10-14T05:07:06.734Z"
+    },
+    {
+      "actorEmail": "sahara@bannu",
+      "actorRole": "OWNER",
+      "action": "USER_LOGIN",
+      "targetResource": "AUTH_SESSION",
+      "newValue": "Logged in with role OWNER",
+      "id": "audit_1791531167350_lya7",
+      "timestamp": "2026-10-09T07:32:47.350Z"
+    },
+    {
+      "id": "audit_1791531167344_pk9h",
+      "actorEmail": "sahara@bannu",
+      "actorRole": "OWNER",
+      "action": "SETTINGS_UPDATED",
+      "targetResource": "BUSINESS_PROFILE",
+      "newValue": "Sahara Bakers",
+      "timestamp": "2026-10-09T07:32:47.344Z"
+    },
+    {
+      "id": "audit_1791531167057_0zia",
+      "actorEmail": "shahid@bannu.pk",
+      "actorRole": "CUSTOMER",
+      "action": "ORDER_CREATED",
+      "targetResource": "ORDER_SB-AUDIT-1791531166765",
+      "newValue": "Rs. 700 (DELIVERY)",
+      "timestamp": "2026-10-09T07:32:47.057Z"
+    },
+    {
+      "id": "audit_1791531166762_smo6",
+      "actorEmail": "sahara@bannu",
+      "actorRole": "OWNER",
+      "action": "PRICE_UPDATED",
+      "targetResource": "PRODUCT_Crispy Chicken Puff Patty",
+      "newValue": "Rs. 650",
+      "previousValue": "Rs. 650",
+      "timestamp": "2026-10-09T07:32:46.762Z"
+    },
+    {
+      "actorEmail": "sahara@bannu",
+      "actorRole": "OWNER",
+      "action": "USER_LOGIN",
+      "targetResource": "AUTH_SESSION",
+      "newValue": "Logged in with role OWNER",
+      "id": "audit_1791531164886_g252",
+      "timestamp": "2026-10-09T07:32:44.886Z"
+    },
+    {
+      "id": "audit_1791531102283_mhy2",
+      "actorEmail": "sahara@bannu",
+      "actorRole": "OWNER",
+      "action": "PAYMENT_STATUS_CHANGED",
+      "targetResource": "ORDER_SB-ORD-1791531042724",
+      "newValue": "PAYMENT_CONFIRMED",
+      "previousValue": "PAYMENT_PENDING",
+      "timestamp": "2026-10-09T07:31:42.283Z"
+    },
+    {
+      "id": "audit_1791531090443_n279",
+      "actorEmail": "sahara@bannu",
+      "actorRole": "OWNER",
+      "action": "ORDER_STATUS_CHANGED",
+      "targetResource": "ORDER_SB-ORD-1791531042724",
+      "newValue": "CANCELLED",
+      "previousValue": "CANCELLED",
+      "timestamp": "2026-10-09T07:31:30.443Z"
+    },
+    {
+      "id": "audit_1791531065108_3k1l",
+      "actorEmail": "sahara@bannu",
+      "actorRole": "OWNER",
+      "action": "ORDER_STATUS_CHANGED",
+      "targetResource": "ORDER_SB-ORD-1791531042724",
+      "newValue": "CANCELLED",
+      "previousValue": "ORDER_PLACED",
+      "timestamp": "2026-10-09T07:31:05.108Z"
+    },
+    {
+      "id": "audit_1791531054960_jtlh",
+      "actorEmail": "sahara@bannu",
+      "actorRole": "OWNER",
+      "action": "SETTINGS_UPDATED",
+      "targetResource": "BUSINESS_PROFILE",
+      "newValue": "Sahara Bakers",
+      "timestamp": "2026-10-09T07:30:54.960Z"
+    },
+    {
+      "id": "audit_1791531043058_p1ib",
+      "actorEmail": "mali@bannu.pk",
+      "actorRole": "CUSTOMER",
+      "action": "ORDER_CREATED",
+      "targetResource": "ORDER_SB-ORD-1791531042724",
+      "newValue": "Rs. 700 (DELIVERY)",
+      "timestamp": "2026-10-09T07:30:43.058Z"
+    },
+    {
+      "id": "audit_1791531027282_33wo",
+      "actorEmail": "sahara@bannu",
+      "actorRole": "OWNER",
+      "action": "PRICE_UPDATED",
+      "targetResource": "PRODUCT_Crispy Chicken Puff Patty",
+      "newValue": "Rs. 650",
+      "previousValue": "Rs. 650",
+      "timestamp": "2026-10-09T07:30:27.282Z"
+    },
+    {
+      "id": "audit_1791530951833_ulfa",
+      "actorEmail": "sahara@bannu",
+      "actorRole": "OWNER",
+      "action": "PRICE_UPDATED",
+      "targetResource": "PRODUCT_Crispy Chicken Puff Patty",
+      "newValue": "Rs. 650",
+      "previousValue": "Rs. 90",
+      "timestamp": "2026-10-09T07:29:11.833Z"
+    },
+    {
+      "actorEmail": "sahara@bannu",
+      "actorRole": "OWNER",
+      "action": "USER_LOGIN",
+      "targetResource": "AUTH_SESSION",
+      "newValue": "Logged in with role OWNER",
+      "id": "audit_1791529965901_fz30",
+      "timestamp": "2026-10-09T07:12:45.901Z"
+    },
+    {
+      "id": "audit_1791529965895_zz8p",
+      "actorEmail": "test@saharabakers.pk",
+      "actorRole": "CUSTOMER",
+      "action": "ORDER_CREATED",
+      "targetResource": "ORDER_SB-TEST-999",
+      "newValue": "Rs. 1750 (undefined)",
+      "timestamp": "2026-10-09T07:12:45.895Z"
+    },
+    {
+      "id": "audit_1791529965869_vasv",
+      "actorEmail": "sahara@bannu",
+      "actorRole": "OWNER",
+      "action": "PRICE_UPDATED",
+      "targetResource": "PRODUCT_Three Milk Cake",
+      "newValue": "Rs. 1750",
+      "previousValue": "Rs. 1650",
+      "timestamp": "2026-10-09T07:12:45.869Z"
+    },
+    {
+      "actorEmail": "sahara@bannu",
+      "actorRole": "OWNER",
+      "action": "USER_LOGIN",
+      "targetResource": "AUTH_SESSION",
+      "newValue": "Logged in with role OWNER",
+      "id": "audit_1791529965853_58jl",
+      "timestamp": "2026-10-09T07:12:45.853Z"
+    },
+    {
+      "id": "audit_1791367681896_3uav",
+      "actorEmail": "sahara@bannu",
+      "actorRole": "CUSTOMER",
+      "action": "ORDER_CREATED",
+      "targetResource": "ORDER_SB-1004",
+      "newValue": "Rs. 770 (PICKUP)",
+      "timestamp": "2026-10-07T10:08:01.896Z"
+    },
+    {
+      "id": "audit_1791367023125_tqnu",
+      "actorEmail": "sahara@bannu",
+      "actorRole": "OWNER",
+      "action": "ORDER_STATUS_CHANGED",
+      "targetResource": "ORDER_SB-1003",
+      "newValue": "ACCEPTED",
+      "previousValue": "ORDER_PLACED",
+      "timestamp": "2026-10-07T09:57:03.125Z"
+    },
+    {
+      "id": "audit_1791366982440_k2nx",
+      "actorEmail": "sahara@bannu",
+      "actorRole": "CUSTOMER",
+      "action": "ORDER_CREATED",
+      "targetResource": "ORDER_SB-1003",
+      "newValue": "Rs. 730 (DELIVERY)",
+      "timestamp": "2026-10-07T09:56:22.440Z"
+    },
+    {
+      "id": "audit_init_1791365737348",
+      "actorEmail": "system@sahara.pk",
+      "actorRole": "OWNER",
+      "action": "CENTRAL_DB_BOOTSTRAP",
+      "targetResource": "DATABASE",
+      "newValue": "Centralized database initialized with authentic Sahara Riders & Delivery Zones",
+      "timestamp": "2026-10-07T09:35:37.348Z"
+    }
+  ],
+  "riders": [
+    {
+      "id": "rider_shah_nawaz",
+      "name": "Shah Nawaz",
+      "username": "shahnawaz@rider",
+      "userId": "usr_rider_shahnawaz",
+      "phone": "+923350507308",
+      "altPhone": "+923490068374",
+      "areaNote": "Rashid / Bannu Cantt & City (رائش)",
+      "status": "AVAILABLE",
+      "active": true,
+      "accountStatus": "ACTIVE",
+      "totalDeliveries": 12,
+      "completedDeliveries": 12,
+      "cancelledDeliveries": 0,
+      "activeDeliveries": 0,
+      "createdAt": "2026-10-01T00:00:00.000Z",
+      "updatedAt": "2026-10-14T05:06:28.705Z"
+    },
+    {
+      "id": "rider_haroon",
+      "name": "Haroon Niazi",
+      "username": "haroon@rider",
+      "userId": "usr_rider_haroon",
+      "phone": "+923322533155",
+      "areaNote": "Railway Road & City Center",
+      "status": "AVAILABLE",
+      "active": true,
+      "accountStatus": "PENDING_VERIFICATION",
+      "totalDeliveries": 9,
+      "completedDeliveries": 9,
+      "cancelledDeliveries": 0,
+      "activeDeliveries": 0,
+      "createdAt": "2026-10-01T00:00:00.000Z",
+      "updatedAt": "2026-10-14T05:06:28.706Z"
+    },
+    {
+      "id": "rider_rohin_riyaz",
+      "name": "Rohin Riyaz",
+      "username": "rohin@rider",
+      "userId": "usr_rider_rohin",
+      "phone": "+923348944901",
+      "altPhone": "+923369396994",
+      "areaNote": "Markaz Delivery / Main Branch (مرکز ڈلیوری)",
+      "status": "AVAILABLE",
+      "active": true,
+      "accountStatus": "PENDING_VERIFICATION",
+      "totalDeliveries": 15,
+      "completedDeliveries": 15,
+      "cancelledDeliveries": 0,
+      "activeDeliveries": 0,
+      "createdAt": "2026-10-01T00:00:00.000Z",
+      "updatedAt": "2026-10-14T05:06:28.706Z"
+    },
+    {
+      "id": "rider_zubair",
+      "name": "Zubair",
+      "username": "zubair@rider",
+      "phone": "+92 330 5868492",
+      "areaNote": "Cantt & City Deliveries",
+      "status": "AVAILABLE",
+      "active": true,
+      "accountStatus": "ACTIVE",
+      "totalDeliveries": 28,
+      "completedDeliveries": 28,
+      "cancelledDeliveries": 0,
+      "activeDeliveries": 0,
+      "createdAt": "2026-10-01T00:00:00.000Z",
+      "updatedAt": "2026-10-14T05:09:40.507Z"
+    }
+  ],
+  "deliveryZones": [
+    {
+      "id": "zone-1",
+      "name": "Zone 1: Railway Road & City Center",
+      "minDistanceKm": 0,
+      "maxDistanceKm": 2,
+      "fee": 80,
+      "estimatedMinutes": "15-25 mins",
+      "active": true,
+      "description": "Immediate vicinity around Sahara Bakers and City Market"
+    },
+    {
+      "id": "zone-2",
+      "name": "Zone 2: Cantonment & Sugar Mill Colony",
+      "minDistanceKm": 2,
+      "maxDistanceKm": 5,
+      "fee": 140,
+      "estimatedMinutes": "25-35 mins",
+      "active": true,
+      "description": "Bannu Cantt, Station area, and Sugar Mill Colony"
+    },
+    {
+      "id": "zone-3",
+      "name": "Zone 3: Miran Shah Road & Mandeyan",
+      "minDistanceKm": 5,
+      "maxDistanceKm": 8,
+      "fee": 200,
+      "estimatedMinutes": "35-45 mins",
+      "active": true,
+      "description": "Outer ring, Mandeyan, and Miran Shah Road"
+    },
+    {
+      "id": "zone-4",
+      "name": "Zone 4: Bannu University & Suburbs",
+      "minDistanceKm": 8,
+      "maxDistanceKm": 12,
+      "fee": 280,
+      "estimatedMinutes": "45-60 mins",
+      "active": true,
+      "description": "University of Science and Technology Bannu & Outskirts"
+    }
+  ],
+  "printerConfig": {
+    "paperWidth": "58mm",
+    "headerNote": "The Famous Clay-Pot Matka Pizza & Artisanal Bakery",
+    "footerNote": "Thank you for visiting Sahara Bakers! Fresh daily since inception.",
+    "autoCut": true,
+    "logoUrl": "/assets/images/sahara_logo.jpg",
+    "easypaisaQrUrl": "/assets/images/sahara_easypaisa_qr.jpg"
+  }
+}

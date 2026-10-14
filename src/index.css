@@ -1,0 +1,324 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  body {
+    font-family: var(--font-sans);
+  }
+  h1, h2, h3, .font-display {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Premium Bakery Product Interactive Zoom & Subtle Tilt */
+.bakery-image-container {
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+}
+
+.bakery-image-card {
+  transition: transform 650ms cubic-bezier(0.16, 1, 0.3, 1), filter 500ms ease;
+  will-change: transform;
+  transform-origin: center center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Specific product interaction rules */
+/* Cakes: elegant zoom with a very subtle delicate tilt */
+@media (hover: hover) and (pointer: fine) {
+  .group:hover .bakery-image-cake {
+    transform: scale(1.12) rotate(-1.5deg);
+  }
+
+  /* Sweets / Mithai: gentle pure zoom with minuscule tilt */
+  .group:hover .bakery-image-sweets {
+    transform: scale(1.10) rotate(1deg);
+  }
+
+  /* Pastries & Artisan Bakery items: gentle organic zoom */
+  .group:hover .bakery-image-bakery {
+    transform: scale(1.09) rotate(-0.8deg);
+  }
+
+  /* Beverages and other treats: smooth focused zoom */
+  .group:hover .bakery-image-default {
+    transform: scale(1.08) rotate(0.6deg);
+  }
+
+  /* Product Card elevation */
+  .bakery-product-card {
+    transition: transform 350ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 350ms ease, border-color 350ms ease;
+  }
+  .bakery-product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px -6px rgba(120, 53, 15, 0.12), 0 8px 12px -4px rgba(120, 53, 15, 0.06);
+    border-color: #fde68a;
+  }
+}
+
+/* Card appearance entrance animation */
+@keyframes bakeryFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-bakery-fade-up {
+  animation: bakeryFadeUp 450ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Interactive Button Micro-interaction */
+.bakery-btn {
+  transition: transform 150ms ease, background-color 200ms ease, box-shadow 200ms ease;
+}
+.bakery-btn:hover {
+  transform: translateY(-1px);
+}
+.bakery-btn:active {
+  transform: scale(0.98);
+}
+
+/* ==========================================================================
+   MATKA PIZZA CINEMATIC INTRO ANIMATION
+   Sequence:
+   1. Fly in from sky with aerodynamic rotation & scale
+   2. Descend smoothly toward surface
+   3. Realistic landing impact / jhatka with horizontal compression
+   4. Believable bounce upward and secondary settling
+   5. Cinematic zoom in -> slight zoom out -> settle
+   6. Seamless transition into gentle ambient idle floating loop
+   ========================================================================== */
+
+@keyframes matkaFlyAndLand {
+  0% {
+    opacity: 0;
+    transform: translateY(-90px) rotate(-8deg) scale(0.85);
+  }
+  15% {
+    opacity: 1;
+    transform: translateY(-55px) rotate(-5deg) scale(0.92);
+  }
+  45% {
+    opacity: 1;
+    transform: translateY(0px) rotate(1.5deg) scale(1.02);
+  }
+  /* 3. Landing impact / Jhatka (Compression on surface) */
+  60% {
+    transform: translateY(12px) rotate(0deg) scale3d(1.07, 0.91, 1);
+  }
+  /* 4. Bounce upward */
+  72% {
+    transform: translateY(-16px) rotate(-1deg) scale3d(0.98, 1.03, 1);
+  }
+  /* Secondary settle */
+  82% {
+    transform: translateY(3px) rotate(0.3deg) scale3d(1.02, 0.98, 1);
+  }
+  /* 6. Cinematic zoom in */
+  90% {
+    transform: translateY(0px) rotate(0deg) scale(1.05);
+  }
+  /* Final settle */
+  100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+}
+
+/* Mobile variant with reduced travel distance to guarantee no overflow */
+@keyframes matkaFlyAndLandMobile {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px) rotate(-5deg) scale(0.88);
+  }
+  18% {
+    opacity: 1;
+    transform: translateY(-30px) rotate(-3deg) scale(0.94);
+  }
+  48% {
+    opacity: 1;
+    transform: translateY(0px) rotate(1deg) scale(1.02);
+  }
+  /* Landing impact / Jhatka */
+  62% {
+    transform: translateY(8px) rotate(0deg) scale3d(1.05, 0.93, 1);
+  }
+  /* Bounce */
+  74% {
+    transform: translateY(-10px) rotate(-0.5deg) scale3d(0.99, 1.02, 1);
+  }
+  84% {
+    transform: translateY(2px) rotate(0deg) scale(1.01);
+  }
+  92% {
+    transform: translateY(0px) rotate(0deg) scale(1.03);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+}
+
+/* Dynamic contact shadow underneath the landing pot */
+@keyframes matkaShadowLand {
+  0% {
+    opacity: 0;
+    transform: scale(0.4);
+    filter: blur(14px);
+  }
+  45% {
+    opacity: 0.35;
+    transform: scale(0.75);
+    filter: blur(8px);
+  }
+  /* Shadow spreads wide on impact */
+  60% {
+    opacity: 0.85;
+    transform: scale(1.18);
+    filter: blur(4px);
+  }
+  /* Shadow contracts on bounce */
+  72% {
+    opacity: 0.4;
+    transform: scale(0.85);
+    filter: blur(7px);
+  }
+  82% {
+    opacity: 0.65;
+    transform: scale(1.02);
+    filter: blur(5px);
+  }
+  90% {
+    opacity: 0.7;
+    transform: scale(1.04);
+    filter: blur(5px);
+  }
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+    filter: blur(5px);
+  }
+}
+
+/* Ambient breathing/floating idle loop once intro completes */
+@keyframes matkaIdleFloating {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes matkaShadowIdle {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(0.94);
+    opacity: 0.45;
+  }
+}
+
+.matka-intro-active {
+  animation: matkaFlyAndLand 2.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  will-change: transform, opacity;
+  transform-origin: center bottom;
+}
+
+@media (max-width: 640px) {
+  .matka-intro-active {
+    animation: matkaFlyAndLandMobile 2.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+}
+
+.matka-shadow-active {
+  animation: matkaShadowLand 2.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  will-change: transform, opacity;
+}
+
+.matka-idle-float {
+  animation: matkaIdleFloating 4.5s ease-in-out infinite;
+  will-change: transform;
+}
+
+.matka-shadow-idle {
+  animation: matkaShadowIdle 4.5s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+/* Hero text reveal */
+@keyframes heroTextReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-hero-text {
+  animation: heroTextReveal 900ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Respect user's accessibility preferences for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .matka-intro-active,
+  .matka-shadow-active,
+  .matka-idle-float,
+  .matka-shadow-idle,
+  .animate-hero-text,
+  .bakery-image-card,
+  .bakery-product-card,
+  .bakery-btn,
+  .animate-bakery-fade-up {
+    transition: none !important;
+    transform: none !important;
+    animation: none !important;
+    opacity: 1 !important;
+  }
+}
+
+/* Print optimization for counter thermal receipts */
+@media print {
+  @page {
+    margin: 0;
+    size: auto;
+  }
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .receipt-qr-image {
+    max-width: 160px !important;
+    max-height: 160px !important;
+    width: 150px !important;
+    height: 150px !important;
+    margin: 0 auto !important;
+    display: block !important;
+    image-rendering: pixelated !important;
+    image-rendering: crisp-edges !important;
+    filter: contrast(200%) !important;
+  }
+  .receipt-logo-image {
+    max-width: 80px !important;
+    max-height: 80px !important;
+    margin: 0 auto !important;
+    display: block !important;
+    image-rendering: -webkit-optimize-contrast !important;
+    filter: grayscale(100%) contrast(150%) !important;
+  }
+}
+
+

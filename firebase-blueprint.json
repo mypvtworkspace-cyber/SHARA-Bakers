@@ -1,0 +1,189 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User account and profile information",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique user ID"
+        },
+        "name": {
+          "type": "string",
+          "description": "Full name of the user"
+        },
+        "email": {
+          "type": "string",
+          "description": "Email address"
+        },
+        "phone": {
+          "type": "string",
+          "description": "Contact phone number"
+        },
+        "role": {
+          "type": "string",
+          "description": "User role for RBAC",
+          "enum": ["CUSTOMER", "OWNER", "ADMIN", "MANAGER", "WAITER", "KITCHEN_STAFF", "RIDER", "ORDER_STAFF"]
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "ISO timestamp of account creation"
+        }
+      },
+      "required": ["id", "name", "email", "role"]
+    },
+    "Product": {
+      "title": "Product",
+      "description": "Bakery or pizza menu product",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique product ID"
+        },
+        "name": {
+          "type": "string",
+          "description": "Product display name"
+        },
+        "category": {
+          "type": "string",
+          "description": "Category identifier"
+        },
+        "productType": {
+          "type": "string",
+          "description": "Product type category"
+        },
+        "description": {
+          "type": "string",
+          "description": "Detailed description"
+        },
+        "basePrice": {
+          "type": "number",
+          "description": "Base price in PKR"
+        },
+        "image": {
+          "type": "string",
+          "description": "Image asset path or URL"
+        },
+        "available": {
+          "type": "boolean",
+          "description": "Stock availability flag"
+        },
+        "isFeatured": {
+          "type": "boolean",
+          "description": "Featured product highlight"
+        }
+      },
+      "required": ["id", "name", "category", "basePrice"]
+    },
+    "Order": {
+      "title": "Order",
+      "description": "Customer order with items, fulfillment, and payment",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique order ID"
+        },
+        "orderNumber": {
+          "type": "string",
+          "description": "Human-readable order sequence number"
+        },
+        "customerName": {
+          "type": "string",
+          "description": "Customer name"
+        },
+        "customerPhone": {
+          "type": "string",
+          "description": "Customer phone"
+        },
+        "customerEmail": {
+          "type": "string",
+          "description": "Customer email"
+        },
+        "customerId": {
+          "type": "string",
+          "description": "Customer authenticated user ID"
+        },
+        "totalAmount": {
+          "type": "number",
+          "description": "Total payable in PKR"
+        },
+        "paymentMethod": {
+          "type": "string",
+          "description": "Payment method chosen",
+          "enum": ["CASH", "EASYPAISA", "CASH_ON_DELIVERY", "CASH_ON_PICKUP"]
+        },
+        "paymentStatus": {
+          "type": "string",
+          "description": "Payment confirmation state",
+          "enum": ["PAYMENT_PENDING", "PAYMENT_CONFIRMED", "REFUNDED"]
+        },
+        "status": {
+          "type": "string",
+          "description": "Order progression status"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "ISO timestamp when order was placed"
+        }
+      },
+      "required": ["id", "orderNumber", "customerName", "customerPhone", "totalAmount", "paymentMethod", "paymentStatus", "status"]
+    },
+    "BusinessSettings": {
+      "title": "BusinessSettings",
+      "description": "Store configuration, contact, creator credit, and Easypaisa info",
+      "type": "object",
+      "properties": {
+        "businessName": {
+          "type": "string",
+          "description": "Restaurant name"
+        },
+        "phone": {
+          "type": "string",
+          "description": "Customer service phone"
+        },
+        "creatorName": {
+          "type": "string",
+          "description": "Developer name"
+        },
+        "creatorCredit": {
+          "type": "string",
+          "description": "Credit line text"
+        },
+        "showCreatorCredit": {
+          "type": "boolean",
+          "description": "Flag to show footer credit"
+        },
+        "easypaisaAccountTitle": {
+          "type": "string",
+          "description": "Account holder name for Easypaisa"
+        },
+        "easypaisaAccountNumber": {
+          "type": "string",
+          "description": "Mobile account number for Easypaisa"
+        }
+      },
+      "required": ["businessName", "phone"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User profiles indexed by UID"
+    },
+    "/products/{productId}": {
+      "schema": "Product",
+      "description": "Menu products"
+    },
+    "/orders/{orderId}": {
+      "schema": "Order",
+      "description": "Customer orders"
+    },
+    "/settings/{settingId}": {
+      "schema": "BusinessSettings",
+      "description": "Platform settings including business settings and Matka config"
+    }
+  }
+}
